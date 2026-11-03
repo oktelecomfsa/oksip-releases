@@ -95,8 +95,26 @@ estiver pronta, aparecem uma notificação e o item **Reiniciar para atualizar**
 ela acabar). Para não procurar sozinho, desligue "Procurar atualizações sozinho" em Ajustes → Sobre; "Procurar
 agora" continua valendo.
 
-A única conexão do Oksip fora do seu PABX (e do STUN, se você pôs um) é essa procura no GitHub, onde ficam os
-instaladores. Ela não leva nada sobre você.
+Fora do seu PABX (e do STUN, se você pôs um), o Oksip só se conecta sozinho a essa procura no GitHub, onde ficam os
+instaladores. Ela não leva nada sobre você. O WhatsApp só abre quando você clica em uma tecla de suporte.
+
+## Falar com o suporte
+
+Em **Ajustes → Suporte** ou no menu da bandeja, há duas teclas. As duas abrem o WhatsApp Web no navegador, na conversa
+com o suporte da Oktelecom. Se pedir, leia o QR Code para entrar no WhatsApp Web. **Quem envia é você:** a mensagem
+aparece pronta, e nada sai sem você clicar em Enviar.
+
+- **Falar com o suporte:** a mensagem já traz o seu ramal e a versão do Oksip.
+- **Enviar log do erro:** o Oksip gera um arquivo `suporte-<data>-<hora>.txt`, mostra-o na pasta e abre a conversa com um
+  resumo do erro. Arraste o arquivo para a conversa e clique em Enviar.
+
+**O que o arquivo leva:** a versão do Oksip e o sistema, as suas contas (domínio, ramal, transporte, proxy, STUN e estado
+do registro), as chamadas com falha ou qualidade ruim (números e nomes, IPs, horários, estatísticas e mensagens SIP) e
+os eventos recentes do motor. **Nunca leva** senhas, dígitos digitados durante a chamada, texto de mensagens nem a sua
+agenda. É um arquivo de texto: você pode abri-lo e conferir antes de enviar.
+
+Os eventos do motor ficam só na memória: envie o log antes de fechar o Oksip. O arquivo fica em `%APPDATA%\Oksip\logs`
+(`~/.config/Oksip/logs` no Linux), e o Oksip guarda só os 5 últimos.
 
 ## Desinstalar
 

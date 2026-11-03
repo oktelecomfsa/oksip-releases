@@ -131,8 +131,8 @@ aparece pronta, e nada sai sem você clicar em Enviar.
   resumo do erro. Arraste o arquivo para a conversa e clique em Enviar.
 
 **O que o arquivo leva:** a versão do Oksip e o sistema, as suas contas (domínio, ramal, transporte, proxy, STUN e estado
-do registro), as chamadas com falha ou qualidade ruim (números e nomes, IPs, horários, estatísticas e mensagens SIP) e
-os eventos recentes do motor. **Nunca leva** senhas, dígitos digitados durante a chamada, texto de mensagens nem a sua
+do registro), as mensagens de registro das contas ativas, as chamadas com falha ou qualidade ruim (números e nomes, IPs, horários,
+estatísticas e mensagens SIP) e os eventos recentes do motor. **Nunca leva** senhas, dígitos digitados durante a chamada, texto de mensagens nem a sua
 agenda. É um arquivo de texto: você pode abri-lo e conferir antes de enviar.
 
 Os eventos do motor ficam só na memória: envie o log antes de fechar o Oksip. O arquivo fica em `%APPDATA%\Oksip\logs`

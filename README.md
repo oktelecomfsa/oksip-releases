@@ -85,7 +85,29 @@ fechar a janela minimiza, para o Oksip não sumir de vista.
    - **Automático** tenta o que o PABX anuncia.
 4. **Servidor STUN** (opcional): fora da empresa, atrás de um roteador ou no 4G, ele ajuda o áudio a chegar. Use o que
    o administrador indicar ou, por exemplo, `stun.l.google.com:19302`. Na rede da empresa, deixe vazio.
-5. Salve. A bolinha da conta fica verde quando o ramal registra.
+5. **Sala de conferência e código de captura:** já vêm com `8864` e `*8`. Troque se o seu PABX usar outros, ou apague o que ele não tiver.
+6. Salve. A bolinha da conta fica verde quando o ramal registra.
+
+## Iniciar com o Windows
+
+O Oksip já vem marcado para iniciar com o Windows: ao ligar o computador, ele abre na **bandeja**, sem janela, e registra os seus
+ramais. Clique no ícone da bandeja para abrir a janela. Para desligar, desmarque em **Ajustes → Inicialização**.
+
+Se você desativar o Oksip nos aplicativos de inicialização do Gerenciador de Tarefas, vale o que está lá: o Windows não abre o
+Oksip, mesmo com a opção marcada. No Linux, essa opção ainda não existe.
+
+## A tela inicial
+
+- **Ramal, no topo:** clique em "Ramal" para ver os seus ramais e trocar. Ao trocar, o ramal escolhido registra e **o registro do
+  anterior cai**: chamadas, mensagens e o painel de Ramais dele param aqui até você voltar a ele. Se o novo ramal não registrar, a faixa
+  de erro avisa, e você pode voltar pela mesma lista. O Oksip reabre no ramal escolhido. Durante uma chamada,
+  a troca fica bloqueada.
+- **Atalhos:** em "Adicionar", guarde um nome, um número, ramal ou código (como `*700`) e um ícone. **Um clique liga na hora**, pelo
+  ramal selecionado. Em "Gerenciar atalhos" você edita, muda a ordem e apaga. Eles ficam só neste computador.
+- **Microfone e alto-falante:** a tela mostra o que o Oksip identificou e avisa se faltar um deles. O controle muda o volume do Oksip,
+  inclusive durante a chamada, sem mexer no volume do sistema nem no toque de chamada. O bipe de outra chamada chegando durante uma
+  ligação acompanha o alto-falante: com ele em 0%, o aviso é só na tela. Clique no ícone para silenciar. Para trocar de
+  dispositivo, vá em Ajustes → Áudio. Fora de chamada, o microfone fica fechado; na chamada, o medidor mostra o nível de cada lado.
 
 ## Atualizações
 

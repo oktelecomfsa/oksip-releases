@@ -103,7 +103,8 @@ Oksip, mesmo com a opção marcada. No Linux, essa opção ainda não existe.
   de erro avisa, e você pode voltar pela mesma lista. O Oksip reabre no ramal escolhido. Durante uma chamada,
   a troca fica bloqueada.
 - **Atalhos:** em "Adicionar", guarde um nome, um número, ramal ou código (como `*700`) e um ícone. **Um clique liga na hora**, pelo
-  ramal selecionado. Em "Gerenciar atalhos" você edita, muda a ordem e apaga. Eles ficam só neste computador.
+  ramal selecionado. Em "Gerenciar atalhos" você edita, muda a ordem e apaga. Eles ficam só neste computador. Na hora de transferir uma
+  chamada, eles também aparecem na lista: um clique preenche o número, e você escolhe entre Consultar e Transferir agora.
 - **Microfone e alto-falante:** a tela mostra o que o Oksip identificou e avisa se faltar um deles. O controle muda o volume do Oksip,
   inclusive durante a chamada, sem mexer no volume do sistema nem no toque de chamada. O bipe de outra chamada chegando durante uma
   ligação acompanha o alto-falante: com ele em 0%, o aviso é só na tela. Clique no ícone para silenciar. Para trocar de
@@ -153,6 +154,7 @@ Os eventos do motor ficam só na memória: envie o log antes de fechar o Oksip. 
 | O registro por TCP cai depois de algumas chamadas      | É o "SIP ALG" do roteador estragando as mensagens. Desligue o SIP ALG (ou "SIP Helper", "SIP Passthrough") no roteador, ou use **TLS** ou UDP.                                                               |
 | A chamada completa, mas um lado não ouve               | Fora da empresa, ponha um **servidor STUN** na conta. Confira se o firewall foi liberado (Windows). Se continuar, o roteador ou o PABX pode estar no caminho: mande os Detalhes da chamada ao administrador. |
 | As chamadas não chegam ou as mensagens recebidas somem | Libere o firewall (Windows) e desligue o SIP ALG do roteador.                                                                                                                                                |
+| A mensagem fica em "Aceita pelo PABX" e não chega      | O PABX aceitou, mas a entrega é com ele. Teste com outro softphone e, se também falhar, fale com o administrador.      |
 | A aba Ramais mostra "Sem informação"                   | O PABX precisa aceitar o monitoramento de ramais (BLF). Peça ao administrador para liberar o `SUBSCRIBE` de `dialog`.                                                                                        |
 | "Não há um chaveiro do sistema" (Linux)                | Instale e ative o GNOME Keyring (ou o KWallet, no KDE) e salve a conta de novo.                                                                                                                              |
 

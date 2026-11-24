@@ -17,7 +17,8 @@ só de lá.
 
 ### 1. Baixar e instalar
 
-1. Baixe o `Oksip-Setup-<versão>.exe`.
+1. Baixe o `Oksip-Setup.exe`. Este link sempre traz a versão mais nova:
+   <https://github.com/oktelecomfsa/oksip-releases/releases/latest/download/Oksip-Setup.exe>
 2. Abra o arquivo. O instalador não pede senha de administrador: ele instala só para o seu usuário. Você pode
    escolher a pasta; o padrão serve.
 
